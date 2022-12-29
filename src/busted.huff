@@ -1,0 +1,11 @@
+
+#define constant SWAG = FREE_STORAGE_POINTER()
+
+#define macro M() = {
+	// <slot> sload 0x00 mstore 0x14 0x00 return
+	0x7b 0x00 mstore 0x20 0x00 return
+}
+
+#define macro MAIN() = {
+	M(SWAG)
+}
